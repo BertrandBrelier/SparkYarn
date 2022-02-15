@@ -22,4 +22,33 @@
     <name>yarn.nodemanager.aux-services.spark_shuffle.class</name>
     <value>org.apache.spark.network.yarn.YarnShuffleService</value>
   </property>
+  <property>
+    <name>yarn.scheduler.maximum-allocation-vcores</name>
+    <value>16</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.maximum-allocation-mb</name>
+    <value>16384</value>
+  </property>
+  <property>
+    <name>yarn.nodemanager.resource.memory-mb</name>
+    <value>24576</value>
+  </property>
+  <property>
+    <name>yarn.resourcemanager.scheduler.class</name>
+    <value>org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.fair.preemption</name>
+    <value>true</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.fair.allow-undeclared-pools</name>
+    <value>true</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.fair.user-as-default-queue</name>
+    <value>true</value>
+  </property>
+
 </configuration>
